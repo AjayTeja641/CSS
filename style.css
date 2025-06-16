@@ -1,0 +1,126 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #fff8e1, #ffe57f, #ffeb3b);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #222;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #4e342e;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Search bar */
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#searchInput {
+  width: 300px;
+  max-width: 90vw;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  background: #fffde7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+#searchInput:focus {
+  outline: none;
+  box-shadow: 0 6px 20px rgba(255, 202, 40, 0.6);
+}
+
+/* Cards layout */
+.card-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Individual card */
+.card {
+  background: #fff9c4;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  max-width: 320px;
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Images */
+.card header img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  background: #fffde7;
+  padding: 10px;
+}
+
+/* Card content */
+.card-body {
+  padding: 20px;
+}
+
+.card-body h2 {
+  font-size: 1.4rem;
+  color: #ff6f00;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  font-size: 1rem;
+  color: #5d4037;
+}
+
+/* Footer */
+footer {
+  background: #fff8e1;
+  font-size: 0.85rem;
+  padding: 12px;
+  color: #6d4c41;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #searchInput {
+    width: 90vw;
+  }
+}
