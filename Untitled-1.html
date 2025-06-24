@@ -1,0 +1,48 @@
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Mini Apps</title>
+  <link rel="stylesheet" href="Untitled-2.css">
+</head>
+<body>
+  <h1>JavaScript Mini Apps</h1>
+
+  <!-- Temperature Converter -->
+  <section>
+    <h2>Temperature Converter (°C ↔ °F)</h2>
+    <input id="temp-c" type="number" placeholder="Celsius">
+    <input id="temp-f" type="number" placeholder="Fahrenheit">
+  </section>
+
+  <!-- BMI Calculator -->
+  <section>
+    <h2>BMI Calculator</h2>
+    <input id="weight" type="number" placeholder="Weight (kg)">
+    <input id="height" type="number" placeholder="Height (cm)">
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <p id="bmi-result"></p>
+  </section>
+
+  <!-- Tip & Split Calculator -->
+  <section>
+    <h2>Tip & Bill Split Calculator</h2>
+    <input id="bill" type="number" placeholder="Bill Amount">
+    <input id="tip" type="number" placeholder="Tip %">
+    <input id="people" type="number" placeholder="No. of People">
+    <button onclick="calculateSplit()">Calculate</button>
+    <p id="split-result"></p>
+  </section>
+
+  <!-- Random Quote Picker -->
+  <section>
+    <h2>Random Quote Picker</h2>
+    <button onclick="showRandomQuote()">Get Quote</button>
+    <p id="quote"></p>
+  </section>
+
+  <script src="Untitled-3.js"></script>
+</body>
+</html>
